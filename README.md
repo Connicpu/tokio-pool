@@ -1,4 +1,4 @@
-# tokio-pool
+# tokio-pool [![tokio-pool on crates.io](https://img.shields.io/crates/v/tokio-pool.svg)](https://crates.io/crates/tokio-pool)
 
 ```toml
 [dependencies]
