@@ -1,0 +1,21 @@
+[package]
+name = "tokio-pool"
+version = "0.1.0"
+authors = ["Connor Hilarides <connorcpu@live.com>"]
+repository = "https://github.com/Connorcpu/tokio-pool"
+documentation = "https://docs.rs/tokio-pool"
+readme = "README.md"
+keywords = ["tokio", "pool", "multithread", "concurrent", "futures"]
+license = "MIT"
+
+description = """
+TokioPool is a library designed to help you multithread your
+tokio applications by providing a pool of threads which you
+can distribute your load across.
+"""
+
+[dependencies]
+tokio-core = "^0.1.1"
+
+[dev-dependencies]
+futures = "^0.1.7"
