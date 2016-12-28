@@ -50,7 +50,6 @@ fn main() {
         }).map_err(|_| ())
     });
 
-    // You might call `join.join()` here, I don't in this example so that
-    // `cargo test` doesn't wait forever.
+    join.join();
 }
 ```
