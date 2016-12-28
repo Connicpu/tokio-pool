@@ -14,6 +14,8 @@ can distribute your load across.
 # Example
 
 ```rust
+#[macro_use]
+extern crate log;
 extern crate futures;
 extern crate tokio_core;
 extern crate tokio_pool;
@@ -46,7 +48,9 @@ fn main() {
             });
 
             Ok(())
-        }).map_err(|_| ())
+        }).map_err(|err| {
+            error!("Error with TcpListener: {:?}", err);
+        })
     });
 
     join.join();
