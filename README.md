@@ -19,7 +19,6 @@ extern crate tokio_core;
 extern crate tokio_pool;
 
 use futures::Future;
-
 use futures::Stream;
 use std::net::SocketAddr;
 use std::sync::Arc;
